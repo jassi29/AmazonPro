@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--owl Crosal-->
+  <script src="Coupon.js"></script>
 
 
   </head>
@@ -99,6 +100,9 @@
 
    <!--Off canvas end -->
 
+
+ 
+
    <!--corosal Start-->
    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -134,7 +138,23 @@
     </button>
   </div>
    <!--corosal End-->
+
+      <!--Coupon-->
+   
+        <div id="coupon-container"onload='loadCoupons()'>
+          <div class="close"onclick="closeCoupon()">&times;
+            </div>
+           
+          <h2 class="card-title">Congratulation!</H2>
+            <p>You Can Get</p>
+            <div class="discount">75% Off</div>
+            <div class="code">ASDDNBBN1</div>
+            <a href="#" class="btn">Reedme</a>
+        </div>
+      
+
 <!--container 1-->
+
  <div class="container-fluid" id="">
        <div class="row banner-wrapper">
                 <div class="col-sm-3 banner">
@@ -738,6 +758,7 @@
 
         </a>
 
+       
         
                
   </div>
@@ -768,6 +789,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="JavaScript/javascri.js"></script>
+
+<script>
+  window.onload = loadCoupons(); 
+</script>
 
   </body>
 </html>
